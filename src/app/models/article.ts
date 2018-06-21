@@ -4,7 +4,7 @@ interface ArticleJSON {
   author: string;
   url: string;
   urlToImage: string;
-  publishedAt: Date;
+  publishedAt: string;
   votes: string;
 }
 
@@ -21,8 +21,10 @@ export class Article {
 
   static fromJSON(json: ArticleJSON): Article {
     const article = Object.create(Article.prototype);
+    console.log(article.publishedAt);
     return Object.assign(article, json, {
-      votes: json.votes ? json.votes : 0
+      votes: json.votes ? json.votes : 0,
+      publishedAt: new Date(json.publishedAt)
     });
   }
 

@@ -17,7 +17,7 @@
             <div class="menu">
               <div class="header">Sort by</div>
               <div class="item" (click)="changeSort('Time')">Time</div>
-              <div class="item" (click)="changeSort('Time')">Votes</div>
+              <div class="item" (click)="changeSort('Votes')">Votes</div>
             </div>
             <!-- menu -->
           </div>
@@ -27,7 +27,7 @@
       <!-- left column -->
       <div class="right floated column">
         <div class="ui fluid icon input">
-          <input type="text" placeholder="Search...">
+          <input (keyup)="liveSearch($event)" type="text" placeholder="Search...">
           <i class="search icon"></i>
         </div>
       </div>
