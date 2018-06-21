@@ -1,0 +1,14 @@
+<div class="ui container">
+  <app-article-list-header></app-article-list-header>
+
+  <div class="ui segment">
+    <div class="ui active inverted" [ngClass]="{ 'dimmer': loading }">
+      <div class="ui massive text loader">Loading</div>
+    </div>
+    <div class="ui divided items">
+      <app-article *ngFor="let article of articles | async" [article]="article" class="item">
+      </app-article>
+    </div>
+  </div>
+
+</div>

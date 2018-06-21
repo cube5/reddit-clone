@@ -1,9 +1,9 @@
 import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
 import { Observable } from "rxjs";
 
-import { Article } from "../models/article";
-import { ArticleService } from "../services/article/article.service";
-import { ActivatedRoute } from "@angular/router";
+import { Article } from "../../models/article";
+import { ArticleService } from "../../services/article/article.service";
 
 @Component({
   selector: "app-article-list",

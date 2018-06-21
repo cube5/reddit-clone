@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Observable } from "rxjs";
 
-import { ArticleService } from "../services/article/article.service";
+import { ArticleService } from "../../services/article/article.service";
 
 @Component({
   selector: "app-sidebar",

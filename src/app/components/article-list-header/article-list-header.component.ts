@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { ArticleService } from "../services/article/article.service";
+import { ArticleService } from "../../services/article/article.service";
 
 declare var jQuery: any;
 

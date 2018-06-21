@@ -3,7 +3,7 @@
 </div>
 <div class="content">
   <div class="header">
-    {{ article.title }}
+    <a href="{{ article.url }}" target="_blank">{{ article.title }}</a>
   </div>
   <div class="meta">
     <span class="ui blue small label">
@@ -30,7 +30,7 @@
     <p>{{ article.description }}</p>
   </div>
   <div class="extra">
-    <a href="#" target="_blank" class="ui right floated button primary">
+    <a href="{{ article.url }}" target="_blank" class="ui right floated button primary">
       Read more
       <i class="right chevron icon"></i>
     </a>

@@ -4,7 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "now-start": "npx serve --single ./dist/reddit-clone",
     "build": "ng build --prod --base-href /",
+    "deploy": "npx now dist/reddit-clone",
+    "predeploy": "npm run build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
