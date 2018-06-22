@@ -4,7 +4,7 @@ import { BehaviorSubject, Observable, combineLatest } from "rxjs";
 import { map, filter } from "rxjs/operators";
 
 import { Article } from "../../models/article";
-import { environment } from "../../../environments/environment.prod";
+import { environment } from "../../../environments/environment";
 
 const { baseUrl, newsApiKey } = environment;
 
